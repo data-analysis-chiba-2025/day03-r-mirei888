@@ -1,6 +1,6 @@
 # DAY 3 HOMEWORK
 #
-# Name:
+# Name:Mirei Kuwana
 
 # 0. This demonstrates how to save your answers.
 # I've written the answer for you.
@@ -25,14 +25,19 @@ answer_0 <- 365 * 5
 # HINT: use 1 ft = 0.3048 m
 # HINT: use 1 lb = 0.4536 kg
 
-weight_lb <- 160
-height_ft <- 6
+weight_lb <- 160 * 0.4536
+height_ft <- 6 * 0.3048
+
+answer_1 <- weight_lb / height_ft^2
 
 # 2. The following code has an error. Fix it by editing the code.
 # (You don't need to save a separate answer for this one, just fix the code.)
 
 volume_oz <- 130
 volume_ml <- Volume_oz * 29.574
+
+volume_oz <- 130
+volume_ml <- volume_oz * 29.574
 
 # 3. What is the value of z after running the following code?
 #
@@ -45,7 +50,7 @@ x <- 5
 
 # 4. The sqrt() function calculates the square root of a number.
 #
-# Use the sqrt() function to calculate the square root of 200, and
+# Use the sqrt(200) function to calculate the square root of 200, and
 # save your answer in an object called answer_4.
 
 # 5. The seq() function generates sequences of numbers.
@@ -56,6 +61,8 @@ x <- 5
 # Use seq() make a sequence of even numbers starting at 2 and ending at 100, and
 # save your answer in an object called answer_5
 
+seq(2,200)
+answer_5 <- seq(2, 100, by = 2)
 # 6. Make a vector of logical values (TRUE and FALSE), and save it to an
 #  object called lgl_vec
 #  Next, make vector of character values, and save it to an object
@@ -68,13 +75,16 @@ x <- 5
 #
 # HINT: use c() to make vectors
 # HINT: characters are always written with quotation marks
+lgl_vec <- c(TRUE, TRUE, FALSE)
+chr_vec <- c("apple", "cherry", "banana")
+answer_6 <- typeof(mixed)
 
 # 7. R includes some pre-defined vectors, like `letters`:
 letters
 
 # Use subsetting and the seq() function to subset every other letter starting
 # with "a"
-#
+answer_7 <- letters[seq(1, 26, by = 2)]
 # Save your answer in an object called answer_7
 #
 # HINT: Use `seq()` inside the square brackets
